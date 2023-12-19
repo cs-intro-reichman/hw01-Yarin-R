@@ -3,7 +3,7 @@
  * prints them, and then prints the minimal number that was generated.
  */
 // class declaration
-public class Gen3 {
+public class GenThree {
     // main(string[]) - the entry point of a Java program.
     // args - args contains the supplied command-line
     // arguments as an array of String objects.
