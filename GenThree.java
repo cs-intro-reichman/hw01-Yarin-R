@@ -11,7 +11,7 @@ public class GenThree {
         // saving the user-inputs' values while converting them from strings to integers.
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
-        // finding the min and max user-inputs' numbers and save them as 
+        // finding the min and max user-inputs' numbers and save them.
         int max = Math.max(a, b);
         int min = Math.min(a, b);
         // generate 3 random numbers between min and max using for-loop and Math.random().
