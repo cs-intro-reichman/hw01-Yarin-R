@@ -8,19 +8,22 @@ public class GenThree {
     // args - args contains the supplied command-line
     // arguments as an array of String objects.
     public static void main(String[] args){
-        // array of 3 ints declararion.
-        int[] gen = new int[3];
-        // finding thr min and max user-inputs' numbers.
-        int max = Math.max(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
-        int min = Math.min(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+        // saving the user-inputs' values while converting them from strings to integers.
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        // finding the min and max user-inputs' numbers and save them as 
+        int max = Math.max(a, b);
+        int min = Math.min(a, b);
         // generate 3 random numbers between min and max using for-loop and Math.random().
-        for (int i = 0; i < 3; i++) {
-            gen[i] = (int)((Math.random() * (max - min)) + min);
-            // printing the results exactly as the PDF states.
-            System.out.println(gen[i]);
-        }
+        int gen1st = (int)((Math.random() * (max - min)) + min);
+        int gen2nd = (int)((Math.random() * (max - min)) + min);
+        int gen3rd = (int)((Math.random() * (max - min)) + min);
+        // printing the results exactly as the PDF states.
+        System.out.println(gen1st);
+        System.out.println(gen2nd);
+        System.out.println(gen3rd);
         // finding the min generated number out of 3.
-        int minGen = Math.min(Math.min((gen[0]),(gen[1])),(gen[2]));
+        int minGen = Math.min(Math.min(gen1st, gen2nd), gen3rd);
         // printing the results exactly as the PDF states.
         System.out.println("The minimal generated number was " + minGen);
     }
